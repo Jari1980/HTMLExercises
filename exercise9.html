@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        #p1 {
+            color:aqua
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Exercise 9</h1>
+        <br>
+        <br>
+        <p>Components in HTML can be added in eiher the &#60;head&#62; or &#60;footer&#62;</p>
+        <p id="p1">From head Im setting style for id attribute p1 as aqua.</p>
+        <p id="p2">I placed a function, in footer, that can toggle this paragraf with button below</p>
+        <br>
+        <button onClick=toggle()>Press to toggle</button>
+    </body>
+    <footer>
+        <script>
+            function toggle(){
+                if(document.getElementById("p2").innerText != ""){
+                    document.getElementById("p2").innerText = "";
+                }
+                else{
+                    document.getElementById("p2").innerText = "I placed a function, in footer that can toggle this paragraf with button below"
+                }
+            }
+        </script>
+    </footer>
+</html>
